@@ -8,6 +8,7 @@ import { SiBmw } from "react-icons/si";
 import { SiFerrari } from "react-icons/si";
 import {SkillBars} from "react-skills";
 import Counter from "../components/Counter.jsx";
+import AnimatedText from "../components/AnimatedText.jsx";
 
 const skillsData = [
   {
@@ -66,7 +67,7 @@ function Home() {
               {/* deskripsi-kiri  */}
               <div className="flex-1 bg-jumbotron">
                 <h1 className="font-[Quantico] text-black font-bold text-2xl sm:text-3xl">Hello! I'm</h1>
-                <h1 className="font-[Quantico] text-black font-bold mb-5 tracking-wider text-3xl sm:text-4xl">Rido Amali</h1>
+              <AnimatedText />
                 <p className="text-stone-500 text-base">Hi, I'm a beginner programmer skilled in HTML, CSS, JavaScript, React, Tailwind, Bootstrap, PHP, Laravel, and databases. I focus on front-end development with some back-end knowledge. I’m learning at kelasfullstack.id and have projects on GitHub. Excited to grow and collaborate!</p>
                 <br />
                 <div className="mt-5 flex flex-col sm:flex-row">
