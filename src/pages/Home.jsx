@@ -90,7 +90,7 @@ function Home() {
               </div>
               {/* gambar-kanan */}
               <div className="flex-1 bg-stone-100/30">
-              <img src="/src/assets/ppdmm.jpg" alt="profile" width={350} height={200} className="sm:ml-35" />
+              <img src="src/assets/ppdmm.jpg" alt="profile" width={350} height={200} className="sm:ml-35" />
               </div>
           </div>
         </div>
