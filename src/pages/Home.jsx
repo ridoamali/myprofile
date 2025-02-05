@@ -9,6 +9,7 @@ import { SiFerrari } from "react-icons/si";
 import {SkillBars} from "react-skills";
 import Counter from "../components/Counter.jsx";
 import CircularStroke from "../components/CircularStroke.jsx";
+import AnimatedDiv from "../components/AnimatedDiv.jsx";
 
 const skillsData = [
   {
@@ -111,13 +112,13 @@ function Home() {
                 </div>
               </div>
               {/* gambar-kanan */}
-              <div className="flex-1 bg-stone-100/30">
-              <img src="/ppdmm.jpg" alt="profile" width={350} height={200} className="sm:ml-35" />
-              </div>
+              <AnimatedDiv className="flex-1 bg-stone-100/30">
+              <img src="/ppdmm.jpg" alt="profile" width={350} height={200} className="sm:ml-35" loading="lazy" />
+              </AnimatedDiv>
           </div>
         </div>
       {/* kotakan hitam klien terkini */}
-      <div className="absolute z-99 w-full h-auto sm:w-[64rem] sm:h-[12rem] bg-black text-white sm:mx-41 max-w-5xl px-4 py-2 -mt-20">
+      <AnimatedDiv className="absolute z-99 w-full h-auto sm:w-[64rem] sm:h-[12rem] bg-black text-white sm:mx-41 max-w-5xl px-4 py-2 -mt-20">
         <div className="grid grid-cols-2 sm:grid-cols-4 place-items-center place-content-center items-center my-8 sm:mx-4 ">
           <div className="font-[Quantico] text-xl sm:text-2xl text-white font-bold pb-5">Meet My Recent Clients 
             <br />
@@ -134,9 +135,9 @@ function Home() {
           <SiFerrari className="inline-flex text-4xl sm:text-5xl mr-2"  />
             Ferrari Inc.</div>
         </div>
-      </div>
+      </AnimatedDiv>
       {/* SESI I CAN DO FOR U */}
-      <div className="flex flex-col w-fit md:flex-row md:w-5xl bg-white mx-auto px-4 py-2 h-fit md:h-[40rem]">
+      <AnimatedDiv className="flex flex-col w-fit md:flex-row md:w-5xl bg-white mx-auto px-4 py-2 h-fit md:h-[40rem]">
         {/* bagian kiri */}
         <div className="flex-1 mt-40 pr-10 ">
           <p className="text-black font-[Quantico] text-4xl font-bold">What Can I Do For You</p>
@@ -204,16 +205,16 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </AnimatedDiv>
       {/* SESI SKILL PENDIDIKAN */}
       <div className="h-fit bg-black text-white">
         <div className="sm:mx-41 px-4 py-2"> 
-        <div className="flex flex-row sm:flex-col mt-20">
+        <AnimatedDiv className="flex flex-row sm:flex-col mt-20">
           <span className="font-[quantico] font-bold text-4xl text-center">Check My Skills And Work Experiences</span>
           <span className="text-center sr-only sm:not-sr-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sunt.</span>
-        </div>
+        </AnimatedDiv>
         <div className="grid sm:grid-cols-3 sm:grid-rows-1 my-20 mx-4 ">
-          <div className="font-[Quantico] text-3xl sm:text-[28px] text-white font-bold">
+          <AnimatedDiv className="font-[Quantico] text-3xl sm:text-[28px] text-white font-bold">
            Work Experiences
             <hr className="w-35 sm:mb-10" />
             {/* wordpress */}
@@ -234,8 +235,8 @@ function Home() {
             <div className="text-[20px]">Front-End Dev</div>
             <div className="text-orange-400 text-[14px]"> - Freelance</div>
             </div>
-          </div>
-          <div className="font-[Quantico] text-3xl sm:text-[28px] text-white font-bold mt-5 sm:mt-0">
+          </AnimatedDiv>
+          <AnimatedDiv className="font-[Quantico] text-3xl sm:text-[28px] text-white font-bold mt-5 sm:mt-0">
             Education
             <hr className="w-35 sm:mb-10" />
             {/* SMK */}
@@ -250,13 +251,13 @@ function Home() {
             <div className="text-[20px]">Univ. Muhammadiyah</div>
             <div className="text-orange-400 text-[14px]"> - Malang</div>
             </div>
-          </div>
-          <div className="font-[Quantico] text-3xl sm:text-[28px] text-white font-bold mt-5 sm:mt-0">My Skills & Advantage
+          </AnimatedDiv>
+          <AnimatedDiv className="font-[Quantico] text-3xl sm:text-[28px] text-white font-bold mt-5 sm:mt-0">My Skills & Advantage
           <hr className="w-35 sm:mb-10" />
           <div className="mt-5">
           <SkillBars skills={skillsData} />
           </div>
-          </div>
+          </AnimatedDiv>
         </div>
         </div>
       </div>
