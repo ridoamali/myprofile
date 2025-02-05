@@ -8,7 +8,7 @@ import { SiBmw } from "react-icons/si";
 import { SiFerrari } from "react-icons/si";
 import {SkillBars} from "react-skills";
 import Counter from "../components/Counter.jsx";
-import AnimatedText from "../components/AnimatedText.jsx";
+import CircularStroke from "../components/CircularStroke.jsx";
 
 const skillsData = [
   {
@@ -67,25 +67,46 @@ function Home() {
               {/* deskripsi-kiri  */}
               <div className="flex-1 bg-jumbotron">
                 <h1 className="font-[Quantico] text-black font-bold text-2xl sm:text-3xl">Hello! I'm</h1>
-              <AnimatedText />
+              <CircularStroke />
                 <p className="text-stone-500 text-base">Hi, I'm a beginner programmer skilled in HTML, CSS, JavaScript, React, Tailwind, Bootstrap, PHP, Laravel, and databases. I focus on front-end development with some back-end knowledge. I’m learning at kelasfullstack.id and have projects on GitHub. Excited to grow and collaborate!</p>
                 <br />
                 <div className="mt-5 flex flex-col sm:flex-row">
                   <button 
-                  className=" px-6 py-3 rounded-xs bg-orange-500 font-[NUNITO] font-bold text-lg sm:px-8 sm:py-4 cursor-pointer" 
+                  className="px-6 py-3 rounded-xs bg-orange-500 font-[NUNITO] font-bold text-lg sm:px-8 sm:py-4 cursor-pointer" 
                   onClick={linkWa}>
                     LET'S TALK
                   <GoArrowUpRight className="inline text-xl"/>
                   </button>
-                  <button className="mx-0 px-6 py-3 rounded-xs text-black font-[NUNITO] font-bold text-lg sm:mx-4 sm:px-8 sm:py-4 cursor-pointer " onClick={buttonGithub}>
-                    VIEW PROJECTS <GoArrowUpRight className="inline text-xl" />
-                  </button>
+                  {/* <button 
+                  className="mx-0 px-6 py-3 rounded-xs text-black font-[NUNITO] font-bold text-lg sm:mx-4 sm:px-8 sm:py-4 cursor-pointer " 
+                  onClick={buttonGithub}>
+                    <span className="ml-15 size-2 relative flex">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-75"></span>
+                    <span class="relative inline-flex size-2 rounded-full bg-orange-500"></span>
+                    </span>
+                  VIEW PROJECTS
+                  <GoArrowUpRight className="inline text-xl" />
+                  </button> */}
+                <button 
+                  className="mx-0 px-20 py-3 rounded-xs text-black font-[NUNITO] font-bold text-lg sm:mx-4 sm:px-8 sm:py-4 cursor-pointer flex items-center" 
+                  onClick={buttonGithub}>
+                  
+                  {/* Ping Animation */}
+                  <span className="mr-2 size-3 relative flex">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-75"></span>
+                    <span className="relative inline-flex size-3 rounded-full bg-orange-500"></span>
+                  </span>
+                  
+                  {/* Text and Arrow Icon */}
+                  VIEW PROJECTS
+                  <GoArrowUpRight className="inline text-xl ml-2" />
+                </button>
                 </div>
                 <div className="flex mt-10 border-b-1 border-gray-200 justify-center sm:justify-start">
                   <p className="font-[NUNITO] text-slate-950 font-bold">Check Out My 
-                    <TiSocialGithubCircular className="inline-flex ml-0 text-4xl sm:ml-40 sm:text-5xl cursor-pointer" onClick={buttonGithub} />
-                    <TiSocialLinkedinCircular className="inline-flex -ml-1 text-4xl sm:text-5xl cursor-pointer" onClick={linkEdin} />
-                    <TiSocialDribbbleCircular className="inline-flex -ml-1 text-4xl sm:text-5xl cursor-pointer" onClick={linkDribble} />
+                    <TiSocialGithubCircular className="inline-flex ml-0 text-4xl sm:ml-40 sm:text-5xl cursor-pointer hover:animate-spin" onClick={buttonGithub} />
+                    <TiSocialLinkedinCircular className="inline-flex -ml-1 text-4xl sm:text-5xl cursor-pointer hover:animate-spin" onClick={linkEdin} />
+                    <TiSocialDribbbleCircular className="inline-flex -ml-1 text-4xl sm:text-5xl cursor-pointer hover:animate-spin" onClick={linkDribble} />
                   </p>
                 </div>
               </div>
@@ -102,16 +123,16 @@ function Home() {
             <br />
             <div className="text-gray-500 text-sm sm:text-[15px] sr-only sm:not-sr-only">Here are some of my clients</div>
           </div>
-          <div>
-          <SiTesla className="inline-flex text-4xl sm:text-5xl" />
-            LOGO IPSUM
+          <div className="font-[Nunito] text-xl sm:text-2xl">
+          <SiTesla className="inline-flex text-4xl sm:text-5xl mr-2" />
+            Tesla Inc.
             </div>
-          <div>
-          <SiBmw className="inline-flex text-4xl sm:text-5xl"  />
-            LOGO IPSUM</div>
-          <div>
-          <SiFerrari className="inline-flex text-4xl sm:text-5xl"  />
-            LOGO IPSUM</div>
+          <div className="font-[Nunito] text-xl sm:text-2xl">
+          <SiBmw className="inline-flex text-4xl sm:text-5xl mr-2"  />
+            BMW Inc.</div>
+          <div className="font-[Nunito] text-xl sm:text-2xl">
+          <SiFerrari className="inline-flex text-4xl sm:text-5xl mr-2"  />
+            Ferrari Inc.</div>
         </div>
       </div>
       {/* SESI I CAN DO FOR U */}
