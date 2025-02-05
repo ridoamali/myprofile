@@ -90,7 +90,7 @@ function Home() {
               </div>
               {/* gambar-kanan */}
               <div className="flex-1 bg-stone-100/30">
-              <img src="/assets/ppdmm.jpg" alt="profile" width={350} height={200} className="sm:ml-35" />
+              <img src="\assets\ppdmm.jpg" alt="profile" width={350} height={200} className="sm:ml-35" />
               </div>
           </div>
         </div>
@@ -153,7 +153,7 @@ function Home() {
         <div className="flex-1 my-10 md:mt-50 bg-keramik h-77 px-5 content-center ">
           <div className="flex  p-2 m-2">
             <div className="flex-1  ">
-              <img src="/assets/thumb1.png" alt="thumb projects" />
+              <img src="\assets\thumb1.png" alt="thumb projects" />
             </div>
             <div className="flex-2  ">
               <span className="font-[quantico] text-2xl font-bold">Front-end Dev</span>
@@ -163,7 +163,7 @@ function Home() {
           </div>
           <div className="flex  p-2 m-2">
             <div className="flex-1 ">
-            <img src="/assets/thumb1.png" alt="thumb projects" />
+            <img src="\assets\thumb1.png" alt="thumb projects" />
             </div>
             <div className="flex-2  ">
               <span className="font-[quantico] text-2xl font-bold">UI/UX Design</span>
@@ -173,7 +173,7 @@ function Home() {
           </div>
           <div className="flex  p-2 m-2">
             <div className="flex-1 ">
-            <img src="/src/assets/thumb1.png" alt="thumb projects" />
+            <img src="\src\assets\thumb1.png" alt="thumb projects" />
             </div>
             <div className="flex-2  ">
               <span className="font-[quantico] text-2xl font-bold">Product Design</span>
